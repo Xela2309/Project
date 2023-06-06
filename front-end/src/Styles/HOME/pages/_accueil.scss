@@ -1,0 +1,34 @@
+.accueil {
+    @include dsc();
+    width: 60%;
+}
+
+#scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    padding-top: 7px;
+    border: none;
+    border-radius: 50% 50%;
+    color: $secondary-color;
+    background-color: $primary-color;
+    font-size: 30px;
+    font-weight: 900;
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: ligthen($primary-color, 10%);
+    }
+}
+
+// version mobile
+@media screen and (max-width: 768px) {
+
+    .accueil {
+        width: 100%;
+    }
+    
+}

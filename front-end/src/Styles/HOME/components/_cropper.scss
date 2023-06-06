@@ -1,0 +1,62 @@
+.cropper {
+    @include dsc();
+    width: 100%;
+
+}
+
+.labelpdp {
+    color: white;
+    background-color: lighten($primary-color, 20%);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+
+    &:hover {
+        background-color: lighten($primary-color, 25%);
+        cursor: pointer;
+    }
+}
+
+#handlepdp {
+    display: none;
+}
+
+// partie de recadrage
+.recadrage {
+    width: 100%;
+    @include dsc();
+    background-color: lighten(grey, 40%);
+
+    &--button {
+        color: white;
+        background-color: lighten($primary-color, 20%);
+        border: none;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+// partie preview
+.preview {
+    @include dsc();
+    width: 100%;
+
+    &--img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50% 50%;
+    }
+    
+    &--button {
+        color: white;
+        background-color: lighten(green, 0%);
+        border: none;
+        padding: 10px;
+        margin: 10px;
+
+        &:hover {
+            background-color: lighten(green, 3%);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.inscription {
+    @include dsc();
+    width: 40%;
+    background-color: white;
+    box-shadow: $box-shadow;
+    padding-bottom: 20px;
+}
+
+.info {
+    width: 100%;
+    @include dsc();
+
+    &--text {
+        width: 90%;
+        text-align: center;
+        color: $primary-color;
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background: $tertiary-color;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+.form {
+    @include dsc();
+    width: 100%;
+    
+    &--nom {
+        width: 80%;
+    }
+
+    &__birth {
+        width: 80%;
+        @include dsf(space-between);
+
+        &--date {
+            width: 30%;
+        }
+    }
+}
+
+.sexe {
+    width: 80%;
+    @include dsf(space-between);
+
+    &__right {
+        @include dsf();
+        margin-top: 5px;
+    }
+}
+
+.sexe {
+    &__all {
+        @include dsf();
+        align-items: flex-start;
+    }
+
+    &__m {
+        margin-right: 20px;
+    }
+
+    &--input {
+        width: 20px;
+    }
+
+    &--label {
+        margin-top: 10px;
+    }
+}
+
+.compte {
+    width: 100%;
+    @include dsc();
+
+    &--texte {
+        width: 90%;
+        text-align: center;
+        color: $primary-color;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background: $tertiary-color;
+            margin-top: 5px;
+        }
+    }
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin: -10px 0 10px 0;
+}
+
+.sign_nom {
+    display: none;
+}
+
+.sign_prenom {
+    display: none;
+}
+
+.sign_birth {
+    display: none;
+}
+
+.sign_sexe {
+    display: none;
+}
+
+.sign_email {
+    display: none;
+}
+
+.sign_password {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .inscription {
+        width: 100%;
+    }
+
+    .form__birth--date {
+        width: 60%;
+    }
+}

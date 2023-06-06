@@ -1,0 +1,26 @@
+.connexion {
+    @include dsc();
+    width: 40%;
+    background-color: white;
+    box-shadow: $box-shadow;
+    padding-bottom: 20px;
+
+    &--error {
+
+        &--p {
+            color: red;
+        }
+    }
+}
+
+#error_log {
+    color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .connexion {
+        width: 100%;
+    }
+}

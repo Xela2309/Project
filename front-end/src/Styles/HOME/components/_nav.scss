@@ -1,0 +1,52 @@
+.nav_-_home {
+    @include dsf(space-between);
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: $box-shadow;
+
+
+    &--logo {
+        height: 80%;
+        margin-left: 10px;
+    }
+
+    &__container {
+        @include dsf();
+        align-items: center;
+        height: 100%;
+
+        &--icon {
+            @include dsf();
+            align-items: center;
+            margin: 0 10px 0 10px;
+            color: black;
+            font-size: 30px;
+
+            &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.navlink_-_home {
+    color: inherit;
+    text-decoration: none;
+}
+
+// version petit téléphone
+@media screen and (max-width: 500px) {
+
+    .nav_-_home {
+        @include dsf(center);
+    }
+
+    .nav_-_home--logo {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,144 @@
+.set{
+    width: 60%;
+}
+.container {
+    @include dsf();
+    background-color: white;
+    box-shadow: $box-shadow;
+    width: 100%;
+    height: 450px;
+    margin-top: 20px; 
+}
+
+// partie PDP
+.left {
+    @include dsc(center);
+    height: 100%;
+    margin-left: 30px;
+
+    &--pdp {
+        height: 200px;
+        width: 200px;
+        border-radius: 50% 50%;
+    }
+
+    &__age {
+        @include dsf();
+        align-items: flex-end;
+        border-bottom: 2px solid $secondary-color;
+
+        &--p {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        &--icon {
+            font-size: 30px;
+            color: lighten($primary-color, 30%);
+            margin: 10px;
+
+            &--f {
+                font-size: 30px;
+                color: lighten($secondary-color, 0%);
+                margin: 10px;
+            }
+        }
+    }
+
+}
+
+// Partie biographie
+.right {
+    @include dsc();
+    align-items: flex-start;
+    height: 100%;
+    margin: 10px 0 0 50px;
+
+    &__title {
+        font-size: 25px;
+        border-bottom: 2px solid $secondary-color;
+        margin-bottom: 50px;
+
+        &--h1 {
+            margin: 0;
+        }
+    }
+    &__bio {
+        width: 80%;
+        font-size: 12px;
+        background-color: lighten($tertiary-color, 28%);
+    }
+
+    &__button {
+        @include dsf();
+        
+        &--modify {
+            color: white;
+            background-color: lighten($primary-color, 20%);
+            border: none;
+            border-radius: 5px 5px 5px 5px;
+            margin-top: 10px;
+            height: 40px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($primary-color, 30%);
+            }
+        }
+        &--delete {
+            color: white;
+            background-color: darken($secondary-color, 10%);
+            border-radius: 5px 5px 5px 5px;
+            border: none;
+            margin-left: 10px;
+            margin-top: 10px;
+            height: 40px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: darken($secondary-color, 5%);
+            }
+        }
+    }
+}
+
+
+// Version tablette
+@media screen and (max-width: 991px) {
+
+    .set {
+        width: 100%;
+    }
+    
+}
+
+// version mobile
+@media screen and (max-width: 768px) {
+
+    .set {
+        width: 100%;
+    }
+
+    .container {
+        @include dsc();
+        width: 100%;
+        height: auto;
+        padding: 30px 0 30px 0;
+    }
+
+    .left {
+        
+        &--pdp {
+            width: 120px;
+            height: 120px;
+        }
+
+        &--p {
+            font-size: 10px;
+        }
+    }
+
+    .right {
+        @include dsc(center);
+    }
+    
+}

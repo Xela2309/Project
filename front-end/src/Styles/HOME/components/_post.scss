@@ -1,0 +1,95 @@
+.post {
+    @include dsc();
+    width: 90%;
+    background-color: white;
+    box-shadow: $box-shadow;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.post__user {
+    @include dsf(space-between);
+    align-items: center;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding-bottom: 20px;
+
+    &--img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50% 50%;
+        margin-right: 20px;
+    }
+
+    &--name {
+        display: inline-block;
+        border-bottom: 2px solid $primary-color;
+    }
+}
+
+.user_container {
+    @include dsf();
+}
+.user_pdp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50% 50%;
+    margin-right: 10px;
+}
+
+.post_delete {
+    @include dsf(center);
+    align-items: center;
+    color: white;
+    background-color: darken($secondary-color,  5%);
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50% 50%;
+
+    &:hover {
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+}
+
+.post__content {
+    padding: 15px 0 15px 0;
+    width: 100%;
+
+    &--img {
+        @include dsf(center);
+    }
+
+    &--title {
+        border-bottom: 5px solid $secondary-color;
+        display: inline-block;
+    }
+
+    &--desc {
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.post__likes {
+    @include dsf(center);
+    align-items: center;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.spanLike {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.img_accueil {
+    max-width: 100%;
+}
+
+.fa-heart {
+    font-size: 25px;
+    margin-right: 10px;
+}

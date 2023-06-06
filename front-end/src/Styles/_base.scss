@@ -1,0 +1,20 @@
+body {
+    background-color: lighten($color: $tertiary-color, $amount: 20%);
+}
+
+#root {
+    width: 100%; 
+    @include dsf(center);
+    margin: 25px 0 25px 0;
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 2px solid $primary-color;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
