@@ -9,12 +9,13 @@
         background-color: white;
         margin-top: 50px;
         padding: 20px;
+        border-radius: 25px;
 
         &--title {
-            background-color: $primary-color;
+            background-color: black;
             padding: 10px;
             color: white;
-            border: 5px solid $secondary-color;
+            border: 3px solid $secondary-color;
         }
     }
 
@@ -80,8 +81,10 @@
         color: white;
         background-color: green;
         border: none;
-        padding: 10px;
+        padding: 12px;
         margin-top: 25px;
+        border-radius: 20px;
+        
 
         &:hover {
             background-color: lighten(green, 3%);
