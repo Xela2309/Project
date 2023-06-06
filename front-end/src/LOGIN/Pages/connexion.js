@@ -49,7 +49,7 @@ const Connexion = () => {
                     <p className="connexion--error--p" id="error_log"></p>
                 </div>
 
-                <button className="button" type="submit">Let's go</button>
+                <button className="button" type="submit">Connexion</button>
             </form>
 
         </div>

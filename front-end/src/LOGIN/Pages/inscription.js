@@ -120,7 +120,7 @@ const Inscription = () => {
             <Navigation />
             
             <div className="info">
-                <p className="info--text">Qui êtes-vous ?</p>
+                <p className="info--text">Inscription</p>
 
                 <form className="form" onSubmit={handleSubmit}>
                     {/* bloc information */}
@@ -165,7 +165,7 @@ const Inscription = () => {
 
                     <div className="connexion--error"></div>
 
-                    <button className="button" type="submit">Let's go</button>
+                    <button className="button" type="submit">Valider</button>
                 </form>
             </div>
         </div>

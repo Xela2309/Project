@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import CompletLogo from '../../img/icon-above-font.svg';
+import CompletLogo from '../../img/logo-3wa.png';
 
 
 const Navigation = () => {

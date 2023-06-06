@@ -19,11 +19,12 @@
     width: 50%;
     height: 50px;
     margin-top: 20px;
-    background-color: $primary-color;
-    color: $secondary-color;
+    background-color: black;
+    color: red;
     font-size: 20px;
     border: none;
     transform: scale(1);
+    border-radius: 25px;
 
     &:hover {
         transform: scale(1.015);

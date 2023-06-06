@@ -4,6 +4,7 @@
     background-color: white;
     box-shadow: $box-shadow;
     padding-bottom: 20px;
+    border-radius: 25px;
 }
 
 .info {
@@ -14,6 +15,8 @@
         width: 90%;
         text-align: center;
         color: $primary-color;
+        font-size: 26px;
+        font-weight: bold;
         &::after {
             content: "";
             display: block;
@@ -81,6 +84,8 @@
         width: 90%;
         text-align: center;
         color: $primary-color;
+        font-size: 26px;
+        font-weight: bold;
 
         &::after {
             content: "";

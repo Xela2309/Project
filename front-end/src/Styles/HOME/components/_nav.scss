@@ -5,11 +5,13 @@
     height: 50px;
     background-color: white;
     box-shadow: $box-shadow;
+    border-radius: 25px;
+    // justify-content: center;
 
 
     &--logo {
-        height: 80%;
-        margin-left: 10px;
+        height: 75%;
+        margin-left: 20px;
     }
 
     &__container {

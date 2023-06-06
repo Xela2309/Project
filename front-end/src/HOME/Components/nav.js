@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../img/icon-left-font-monochrome-black.svg";
+import Logo from "../../img/3wa-logo.png";
 import { NavLink } from 'react-router-dom';
 
 const Navigation = () => { 
@@ -10,7 +10,7 @@ const Navigation = () => {
 
     return(
         <div className="nav_-_home">
-            <img src={ Logo } className="nav_-_home--logo"/>
+             <img src={ Logo } className="nav_-_home--logo"/> 
             <div className="nav_-_home__container">
                 <NavLink exact to="/accueil" className="navlink_-_home" activeClassname="navlink_-_home--active">
                     <i class="fas fa-home nav_-_home__container--icon"></i>
